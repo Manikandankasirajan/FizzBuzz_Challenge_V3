@@ -15,7 +15,12 @@ test("returns Buzz if number is divisible by 5", () => {
 	expect(fizzbuzz(num)).toBe("Buzz");
 });
 
-test("returns FizzBuzz if number is divisible by 15", () => {
+test("returns FizzBuzz if number is divisible by both 3 & 5", () => {
+	const num = 15;
+	expect(fizzbuzz(num)).toBe("FizzBuzz");
+});
+
+test("returns FizzBuzz for zero as it is divisible by both 3 & 5", () => {
 	const num = 15;
 	expect(fizzbuzz(num)).toBe("FizzBuzz");
 });

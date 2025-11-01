@@ -14,3 +14,8 @@ test("returns Buzz if number is divisible by 5", () => {
 	const num = 5;
 	expect(fizzbuzz(num)).toBe("Buzz");
 });
+
+test("returns FizzBuzz if number is divisible by 15", () => {
+	const num = 15;
+	expect(fizzbuzz(num)).toBe("FizzBuzz");
+});

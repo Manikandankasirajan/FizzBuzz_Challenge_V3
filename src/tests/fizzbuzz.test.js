@@ -24,3 +24,28 @@ test("returns FizzBuzz for zero as it is divisible by both 3 & 5", () => {
 	const num = 15;
 	expect(fizzbuzz(num)).toBe("FizzBuzz");
 });
+
+test("returns array of results till given range", () => {
+	const num = 15;
+	const result = [];
+	for (let i = 1; i <= num; i++) {
+		result.push(fizzbuzz(i));
+	}
+	expect(result).toStrictEqual([
+		1,
+		2,
+		"Fizz",
+		4,
+		"Buzz",
+		"Fizz",
+		7,
+		8,
+		"Fizz",
+		"Buzz",
+		11,
+		"Fizz",
+		13,
+		14,
+		"FizzBuzz",
+	]);
+});

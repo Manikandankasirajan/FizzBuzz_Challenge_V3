@@ -49,3 +49,11 @@ test("returns array of results till given range", () => {
 		"FizzBuzz",
 	]);
 });
+
+test("throw error for invalid input type", () => {
+	const num = "as";
+
+	expect(() => fizzbuzz(num)).toThrow();
+	expect(() => fizzbuzz(num)).toThrow(TypeError);
+	expect(() => fizzbuzz(num)).toThrow("Invalid Input Type");
+});

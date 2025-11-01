@@ -1,9 +1,13 @@
+import isBuzz from "./utils/isBuzz";
+import isFizz from "./utils/isFizz";
+import isFizzBuzz from "./utils/isFizzBuzz";
+
 export default function fizzbuzz(num) {
-	if (num % 3 === 0 && num % 5 === 0) {
+	if (isFizzBuzz(num)) {
 		return "FizzBuzz";
-	} else if (num % 3 === 0) {
+	} else if (isFizz(num)) {
 		return "Fizz";
-	} else if (num % 5 === 0) {
+	} else if (isBuzz(num)) {
 		return "Buzz";
 	}
 	return num;
